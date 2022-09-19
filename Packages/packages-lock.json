@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.bilal.wizrds": {
+      "version": "https://github.com/Bilal-A-G/W_I_Zr_Ds.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "4b4663ed9fef752c5977ba2f818e8726fec0c118"
+    },
     "com.unity.collab-proxy": {
       "version": "1.13.5",
       "depth": 0,
@@ -18,7 +25,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
-      "version": "3.0.7",
+      "version": "3.0.15",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -27,7 +34,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.visualstudio": {
-      "version": "2.0.11",
+      "version": "2.0.16",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -36,7 +43,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.vscode": {
-      "version": "1.2.4",
+      "version": "1.2.5",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
