@@ -3,26 +3,25 @@ using UnityEngine;
 
 public class StoryNodeFsm : MonoBehaviour
 {
-    [SerializeField] private StoryNode currentNode;
+    public StoryNode currentNode;
     [SerializeField] private GameObject callingObject;
     [SerializeField] private bool debugMode;
 
-    public void UpdateState(string action, string actor, CachedObjectWrapper cachedObjects)
+    public void UpdateState(string request, CachedObjectWrapper cachedObjects)
     {
         for (int i = 0; i < currentNode.transitions.Count; i++)
         {
             for (int j = 0; j < currentNode.transitions[i].requests.Count; j++)
             {
-                if (!ActorAndActionsMatch(currentNode.validRequests[i].requests[j].actor.GetValue(cachedObjects), actor,
-                        currentNode.validRequests[i].requests[j].action.ToString(), action ))
+                if (!RequestsMatch(request, currentNode.transitions[i].requests[j]))
                 {
                     if(debugMode) Debug.Log("Did not find transition with request "+ 
-                                            " Action = " + action + "; Actor = " + actor);
+                                            " Request = " + request);
                     continue;
                 }
                 
                 if(debugMode) Debug.Log("Transitioned nodes " + "Original Node = " + currentNode +"; New Node = " + currentNode.transitions[i].transitionTo + 
-                                        "; Action = " + action + "; Actor = " + actor);
+                                        "; Request = " + request);
                 currentNode = currentNode.transitions[i].transitionTo;
                 break;
             }
@@ -30,49 +29,44 @@ public class StoryNodeFsm : MonoBehaviour
         
         for (int i = 0; i < currentNode.validRequests.Count; i++)
         {
-            for (int j = 0; j < currentNode.validRequests[i].requests.Count; j++)
+            foreach (string x in currentNode.validRequests[i].requests)
             {
-                if (!ActorAndActionsMatch(currentNode.validRequests[i].requests[j].actor.GetValue(cachedObjects), actor,
-                        currentNode.validRequests[i].requests[j].action.ToString(), action))
+                if (!RequestsMatch(x, request))
                 {
                     if(debugMode) Debug.Log("Did not find event with request "+ 
-                                            " Action = " + action + "; Actor = " + actor);
+                                            " Request = " + request);
                     continue;
                 }
 
                 foreach (EventObject t in currentNode.validRequests[i].events)
                 {
                     if(debugMode) Debug.Log("Invoked event " + "Event = " + t + 
-                                            "; Action = " + action + "; Actor = " + actor);
+                                            "; Request = " + request);
                     t.Invoke(callingObject);
                 }
             }
         }
     }
 
-    bool ActorAndActionsMatch(string requestActor, string passedActor, string requestAction, string passedAction)
+    bool RequestsMatch(string sentRequest, string baseRequest)
     {
-        string[] formattedActor = passedActor.Split(" ");
+        string[] formattedRequest = sentRequest.Split(" ");
         
-        bool actionsMatch = String.Equals(requestAction, passedAction,
-            StringComparison.CurrentCultureIgnoreCase);
-        if(debugMode) Debug.Log("Actions Match Result" + " Request Action = " + requestAction + 
-                                "; Passed Action = " + passedAction + "; Match = " + actionsMatch);
-        bool actorsMatch = false;
+        bool requestsMatch = false;
 
-        foreach (string t in formattedActor)
+        foreach (string t in formattedRequest)
         {
-            if (!String.Equals(requestActor, t, 
+            if (!String.Equals(baseRequest, t, 
                     StringComparison.CurrentCultureIgnoreCase))
                 continue;
                     
-            actorsMatch = true;
+            requestsMatch = true;
         }
         
-        if(debugMode) Debug.Log("Actors Match Result" + " Request Actor = " + requestActor + 
-                                "; Passed Actor = " + passedActor + "; Match = " + actorsMatch);
+        if(debugMode) Debug.Log("Request Match Result" + " Sent Request = " + sentRequest + 
+                                "; Base Request = " + baseRequest + "; Match = " + requestsMatch);
 
-        return actorsMatch && actionsMatch;
+        return requestsMatch;
     }
 
 }

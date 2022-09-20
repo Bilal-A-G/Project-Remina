@@ -9,9 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db3385bed6e36b14eb5fbb97273b0126, type: 3}
-  m_Name: LookedAtWorld
+  m_Script: {fileID: 11500000, guid: 29c1719ba34937149868ff07f4f23373, type: 3}
+  m_Name: AbandonTheSearchNode
   m_EditorClassIdentifier: 
-  global: 0
-  queueable: 0
-  dequeueLayer: []
+  validRequests:
+  - requests:
+    - Yes
+    - Leave
+    - Home
+    events:
+    - {fileID: 11400000, guid: b61606482e289a144bde0ef14cf524c1, type: 2}
+  transitions: []

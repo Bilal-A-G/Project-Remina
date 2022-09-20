@@ -10,16 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29c1719ba34937149868ff07f4f23373, type: 3}
-  m_Name: Start
+  m_Name: NotStartedNode
   m_EditorClassIdentifier: 
-  validRequests:
+  validRequests: []
+  transitions:
   - requests:
-    - action: 0
-      actor:
-        useOverride: 0
-        isFolded: 1
-        variableValue: {fileID: 11400000, guid: d44d6f4ee6880af468ac9eabab3069ad, type: 2}
-        overrideValue: 
-    events:
-    - {fileID: 11400000, guid: 6c508c803212a9048bab9a6a8e014b74, type: 2}
-  transitions: []
+    - Play
+    - Start
+    transitionTo: {fileID: 11400000, guid: d85bf4cd8e365a841a6a5c3a7550f10b, type: 2}

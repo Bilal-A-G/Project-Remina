@@ -11,26 +11,15 @@ public class StoryNode : ScriptableObject
 [System.Serializable]
 public struct RequestEventPairs
 {
-    public List<Requests> requests;
+    public List<string> requests;
     public List<EventObject> events;
 }
 
 [System.Serializable]
 public struct RequestTransitions
 {
-    public List<Requests> requests;
+    public List<string> requests;
     public StoryNode transitionTo;
 }
 
-[System.Serializable]
-public struct Requests
-{
-    public Action action;
-    public GenericReference<string> actor;
-}
 
-public enum Action
-{
-    Look,
-    Interact
-} 
