@@ -27,13 +27,13 @@ public class IOHandler : MonoBehaviour
 
     public void ProcessText()
     {
-        if(_printingText) return;
-
         if (inputText.text.ToLower() == "exit")
         {
             Application.Quit();
         }
         
+        if(_printingText) return;
+
         if (inputText.text.ToLower() == "restart")
         {
             _stringBuffer = new List<StringBufferItem>();
