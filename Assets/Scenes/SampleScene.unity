@@ -227,10 +227,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 6c508c803212a9048bab9a6a8e014b74, type: 2}
     actions:
     - {fileID: 11400000, guid: df2c6cc913fa22d43aa01bf3f950b5c2, type: 2}
-  - events:
-    - {fileID: 11400000, guid: 85a0ea56326d05742b9bca60ab45ea17, type: 2}
-    actions:
-    - {fileID: 11400000, guid: 868d08d0ba6f73749a64bb7be4dc69e7, type: 2}
   cachedObjects:
     cache:
     - cachedObject: {fileID: 194696107}
@@ -1599,6 +1595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentNode: {fileID: 11400000, guid: d85bf4cd8e365a841a6a5c3a7550f10b, type: 2}
   callingObject: {fileID: 194696107}
+  debugMode: 0
 --- !u!1 &1964454112
 GameObject:
   m_ObjectHideFlags: 0

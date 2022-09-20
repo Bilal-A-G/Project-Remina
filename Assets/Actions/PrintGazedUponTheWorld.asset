@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58a9232c7c377d342a857fae92f2706c, type: 3}
-  m_Name: PrintHelloWorld
+  m_Name: PrintGazedUponTheWorld
   m_EditorClassIdentifier: 
   stringToPrint:
     useOverride: 1
     isFolded: 1
     variableValue: {fileID: 0}
-    overrideValue: Hello World
+    overrideValue: You gaze upon the world
   outputFieldKey:
     useOverride: 0
     isFolded: 1

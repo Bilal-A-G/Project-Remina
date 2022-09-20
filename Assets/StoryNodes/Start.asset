@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   validRequests:
   - requests:
-    - action: 1
+    - action: 0
       actor:
         useOverride: 0
         isFolded: 1
@@ -22,12 +22,4 @@ MonoBehaviour:
         overrideValue: 
     events:
     - {fileID: 11400000, guid: 6c508c803212a9048bab9a6a8e014b74, type: 2}
-  transitions:
-  - requests:
-    - action: 1
-      actor:
-        useOverride: 0
-        isFolded: 1
-        variableValue: {fileID: 11400000, guid: d44d6f4ee6880af468ac9eabab3069ad, type: 2}
-        overrideValue: 
-    transitionTo: {fileID: 11400000, guid: f388412ecccc4ac4c81285978e10e2b3, type: 2}
+  transitions: []
