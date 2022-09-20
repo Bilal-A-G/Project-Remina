@@ -10,23 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29c1719ba34937149868ff07f4f23373, type: 3}
-  m_Name: SearchForTheReminaNode
+  m_Name: GazedUponTheRemina
   m_EditorClassIdentifier: 
   validRequests:
-  - requests:
-    - No
-    - Stay
-    - Looking
-    events:
-    - {fileID: 11400000, guid: 0aa8a84dd75d9734395b59f47df41b8b, type: 2}
-  transitions:
-  - requests:
-    - Away
-    - Don't
-    - Run
-    transitionTo: {fileID: 11400000, guid: eec0e86f63fb3ba4ba49f259648758ce, type: 2}
   - requests:
     - Look
     - Towards
     - Gaze
-    transitionTo: {fileID: 11400000, guid: adf80cd77b352e94f891df8efa1deb06, type: 2}
+    events:
+    - {fileID: 11400000, guid: fa1bf12a4996d8d42ad81f0392c905e1, type: 2}
+  transitions: []

@@ -8,6 +8,8 @@ public class IOHandler : MonoBehaviour
 {
     public Text inputText;
     public Text outputText;
+    public Scrollbar scrollBar;
+    public Image mask;
     public float typeSpeed;
     
     public StoryNodeFsm storyNodeFsm;
@@ -39,6 +41,8 @@ public class IOHandler : MonoBehaviour
             _stringBuffer = new List<StringBufferItem>();
             storyNodeFsm.currentNode = initialNode;
             startEvent.Invoke(gameObject);
+            outputText.text = "";
+            mask.color = Color.black;
             return;
         }
         
@@ -68,6 +72,7 @@ public class IOHandler : MonoBehaviour
         foreach (char t in textChars)
         {
             yield return new WaitForSeconds(typeSpeed);
+            scrollBar.value = 0;
             outputText.text += "<color=" + stringBufferItem.Colour + ">" + t + "</color>";
         }
 

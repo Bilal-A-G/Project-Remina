@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da350248d2011374a9a71a0f08e3f993, type: 3}
-  m_Name: FoundReminaBlock
+  m_Name: DidntLookBlock
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: 11400000, guid: abeb03c9c3d768f48a97d9d077e233ca, type: 2}
-  - {fileID: 11400000, guid: 86612f2d418bbb34a8f306fb5f0c76a3, type: 2}
-  - {fileID: 11400000, guid: 2bfde7841ba992e4681c256ca21df868, type: 2}
-  - {fileID: 11400000, guid: 4527f39cfb6b213418d41baa26163985, type: 2}
-  - {fileID: 11400000, guid: ac23d4c540bb3134b92525d66aed430a, type: 2}
+  - {fileID: 11400000, guid: aa5c08f1e03bdf64392ae8e71a2ae649, type: 2}
+  - {fileID: 11400000, guid: daf2be81974df934195e20c8a3e6779f, type: 2}
+  - {fileID: 11400000, guid: bc01f9970faf7b94eb1664698de54571, type: 2}
+  - {fileID: 11400000, guid: 97a0c09320bfe204eb2d129f4c71bf44, type: 2}
+  - {fileID: 11400000, guid: ccde926da4a6b03469cf56707a913cc7, type: 2}

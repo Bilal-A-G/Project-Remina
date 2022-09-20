@@ -9,12 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58a9232c7c377d342a857fae92f2706c, type: 3}
-  m_Name: PrintExposition
+  m_Script: {fileID: 11500000, guid: 7493beee9305e394eb8091f4cd329a87, type: 3}
+  m_Name: PrintKeepSearching
   m_EditorClassIdentifier: 
   stringToPrint:
     useOverride: 1
     isFolded: 1
     variableValue: {fileID: 0}
-    overrideValue: It was a dark, cold, and dead quiet night. You were in the observatory,
-      working on something big.
+    overrideValue: You decided to keep looking
