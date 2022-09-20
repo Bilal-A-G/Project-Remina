@@ -1,21 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class InputHandler : MonoBehaviour
 {
-    public Text outputText;
     public Text inputText;
+    [FormerlySerializedAs("storyNodeFSM")] public StoryNodeFsm storyNodeFsm;
+    public CachedObjectWrapper cachedObjects;
 
     public void ProcessText()
     {
-        OutputText(inputText.text);
-    }
-
-    private void OutputText(string output)
-    {
-        outputText.text = outputText.text + "> " + output;
-        outputText.text += "\n";
+        storyNodeFsm.UpdateState(Action.Interact, "world", cachedObjects);
     }
 }
