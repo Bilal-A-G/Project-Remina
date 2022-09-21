@@ -9,24 +9,6 @@ public class StoryNodeFsm : MonoBehaviour
 
     public void UpdateState(string request, CachedObjectWrapper cachedObjects)
     {
-        for (int i = 0; i < currentNode.transitions.Count; i++)
-        {
-            for (int j = 0; j < currentNode.transitions[i].requests.Count; j++)
-            {
-                if (!RequestsMatch(request, currentNode.transitions[i].requests[j]))
-                {
-                    if(debugMode) Debug.Log("Did not find transition with request "+ 
-                                            " Request = " + request);
-                    continue;
-                }
-                
-                if(debugMode) Debug.Log("Transitioned nodes " + "Original Node = " + currentNode +"; New Node = " + currentNode.transitions[i].transitionTo + 
-                                        "; Request = " + request);
-                currentNode = currentNode.transitions[i].transitionTo;
-                break;
-            }
-        }
-        
         for (int i = 0; i < currentNode.validRequests.Count; i++)
         {
             foreach (string x in currentNode.validRequests[i].requests)
@@ -44,6 +26,24 @@ public class StoryNodeFsm : MonoBehaviour
                                             "; Request = " + request);
                     t.Invoke(callingObject);
                 }
+            }
+        }
+        
+        for (int i = 0; i < currentNode.transitions.Count; i++)
+        {
+            for (int j = 0; j < currentNode.transitions[i].requests.Count; j++)
+            {
+                if (!RequestsMatch(request, currentNode.transitions[i].requests[j]))
+                {
+                    if(debugMode) Debug.Log("Did not find transition with request "+ 
+                                            " Request = " + request);
+                    continue;
+                }
+                
+                if(debugMode) Debug.Log("Transitioned nodes " + "Original Node = " + currentNode +"; New Node = " + currentNode.transitions[i].transitionTo + 
+                                        "; Request = " + request);
+                currentNode = currentNode.transitions[i].transitionTo;
+                break;
             }
         }
     }

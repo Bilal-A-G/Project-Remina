@@ -14,11 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   validRequests:
   - requests:
-    - No
-    - Stay
-    - Looking
+    - Away
+    - Don't
+    - Run
     events:
-    - {fileID: 11400000, guid: 0aa8a84dd75d9734395b59f47df41b8b, type: 2}
+    - {fileID: 0}
+  - requests:
+    - Look
+    - Towards
+    - Gaze
+    events:
+    - {fileID: 0}
   transitions:
   - requests:
     - Away

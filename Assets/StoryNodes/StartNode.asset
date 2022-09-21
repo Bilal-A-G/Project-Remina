@@ -14,10 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   validRequests:
   - requests:
-    - Play
-    - Start
+    - No
+    - Stay
+    - Looking
     events:
-    - {fileID: 11400000, guid: 446504f6ccd5ff34786798878b02697c, type: 2}
+    - {fileID: 11400000, guid: 0aa8a84dd75d9734395b59f47df41b8b, type: 2}
+  - requests:
+    - Yes
+    - Home
+    - Leave
+    events:
+    - {fileID: 11400000, guid: b61606482e289a144bde0ef14cf524c1, type: 2}
   transitions:
   - requests:
     - No

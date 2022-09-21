@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29c1719ba34937149868ff07f4f23373, type: 3}
   m_Name: NotStartedNode
   m_EditorClassIdentifier: 
-  validRequests: []
+  validRequests:
+  - requests:
+    - Play
+    - Start
+    events:
+    - {fileID: 11400000, guid: 446504f6ccd5ff34786798878b02697c, type: 2}
   transitions:
   - requests:
     - Play
