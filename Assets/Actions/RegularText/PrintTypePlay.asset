@@ -16,4 +16,4 @@ MonoBehaviour:
     useOverride: 1
     isFolded: 1
     variableValue: {fileID: 0}
-    overrideValue: Type "Play" to begin or "Exit" to quit
+    overrideValue: Type "Play" to begin or "Exit" to quit.

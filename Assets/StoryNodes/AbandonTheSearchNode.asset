@@ -12,11 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29c1719ba34937149868ff07f4f23373, type: 3}
   m_Name: AbandonTheSearchNode
   m_EditorClassIdentifier: 
-  validRequests:
-  - requests:
-    - Yes
-    - Leave
-    - Home
-    events:
-    - {fileID: 11400000, guid: b61606482e289a144bde0ef14cf524c1, type: 2}
+  validRequests: []
   transitions: []

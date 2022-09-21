@@ -12,11 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29c1719ba34937149868ff07f4f23373, type: 3}
   m_Name: GazedUponTheRemina
   m_EditorClassIdentifier: 
-  validRequests:
-  - requests:
-    - Look
-    - Towards
-    - Gaze
-    events:
-    - {fileID: 11400000, guid: fa1bf12a4996d8d42ad81f0392c905e1, type: 2}
+  validRequests: []
   transitions: []

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9918b725fecbf48a1904cf6912241e, type: 3}
+  m_Name: PlayFoundReminaAmbiance
+  m_EditorClassIdentifier: 
+  clipToPlay: {fileID: 8300000, guid: d9db91761008d564c8a22cf67b32944e, type: 3}
+  fadeSpeed: 0.5
+  targetVolume: 0.5
+  ambianceManagerKey:
+    useOverride: 0
+    isFolded: 1
+    variableValue: {fileID: 11400000, guid: e72a7eff24bfb64488e7849c43d03428, type: 2}
+    overrideValue: 
+  finishedPrinting:
+    useOverride: 0
+    isFolded: 1
+    variableValue: {fileID: 11400000, guid: 1ea855c917e72e24faccfc8a7b6d59a4, type: 2}
+    overrideValue: 0

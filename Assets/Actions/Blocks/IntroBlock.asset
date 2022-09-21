@@ -14,7 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actions:
   - {fileID: 11400000, guid: 25134dce2dfdd0a4ea4e2ad2c7d1e45c, type: 2}
+  - {fileID: 11400000, guid: 4ba57a6f6ba25e44584ff8a066dddad3, type: 2}
   - {fileID: 11400000, guid: 0e2f9c9705eaafc49b1896152ba08e30, type: 2}
   - {fileID: 11400000, guid: 29581b88b0bc7c94294d0851dfff49ce, type: 2}
   - {fileID: 11400000, guid: ad74e08dffe8aab479649e73f4c894e8, type: 2}
   - {fileID: 11400000, guid: 360832c31caa7044a8ccc1f9edc65385, type: 2}
+  actionDelays:
+  - 0
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  printingAction:
+    useOverride: 0
+    isFolded: 1
+    variableValue: {fileID: 11400000, guid: 1ea855c917e72e24faccfc8a7b6d59a4, type: 2}
+    overrideValue: 0

@@ -13,8 +13,21 @@ MonoBehaviour:
   m_Name: DidntLookBlock
   m_EditorClassIdentifier: 
   actions:
+  - {fileID: 11400000, guid: b9f96d9557d353d4b9cdfc6eff6306cc, type: 2}
   - {fileID: 11400000, guid: aa5c08f1e03bdf64392ae8e71a2ae649, type: 2}
   - {fileID: 11400000, guid: daf2be81974df934195e20c8a3e6779f, type: 2}
   - {fileID: 11400000, guid: bc01f9970faf7b94eb1664698de54571, type: 2}
   - {fileID: 11400000, guid: 97a0c09320bfe204eb2d129f4c71bf44, type: 2}
   - {fileID: 11400000, guid: ccde926da4a6b03469cf56707a913cc7, type: 2}
+  actionDelays:
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  printingAction:
+    useOverride: 0
+    isFolded: 1
+    variableValue: {fileID: 11400000, guid: 1ea855c917e72e24faccfc8a7b6d59a4, type: 2}
+    overrideValue: 0

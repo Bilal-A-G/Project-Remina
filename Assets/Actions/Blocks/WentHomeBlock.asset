@@ -18,3 +18,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e2041257cc6cde546a396fde097ff5a3, type: 2}
   - {fileID: 11400000, guid: 9ff50746135b7ff40b91f866fb13e790, type: 2}
   - {fileID: 11400000, guid: ccde926da4a6b03469cf56707a913cc7, type: 2}
+  actionDelays:
+  - 0
+  - 1
+  - 1
+  - 1
+  - 1
+  printingAction:
+    useOverride: 0
+    isFolded: 1
+    variableValue: {fileID: 11400000, guid: 1ea855c917e72e24faccfc8a7b6d59a4, type: 2}
+    overrideValue: 0
+  finishedAction:
+    useOverride: 0
+    isFolded: 1
+    variableValue: {fileID: 11400000, guid: ac2f213f6f9794e44aa36b46450b4fd2, type: 2}
+    overrideValue: 0

@@ -16,5 +16,22 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9d6807dc7d6f7044493127b7d783fd64, type: 2}
   - {fileID: 11400000, guid: cf1d24a5a53b898448014fe60eb32892, type: 2}
   - {fileID: 11400000, guid: ccca432182078da4ab5125902c8b76de, type: 2}
+  - {fileID: 11400000, guid: 44b8dfe435c772f4aba1086254f2df86, type: 2}
+  - {fileID: 11400000, guid: c378f73dc0c21b34db85450e79504016, type: 2}
+  - {fileID: 11400000, guid: a29e76e0b7bc18f46b90a700e48052ac, type: 2}
   - {fileID: 11400000, guid: f20dc407edd7ede4999cbc2bf3314420, type: 2}
   - {fileID: 11400000, guid: ccde926da4a6b03469cf56707a913cc7, type: 2}
+  actionDelays:
+  - 0
+  - 2
+  - 1
+  - 1
+  - 3
+  - 4
+  - 1
+  - 3
+  printingAction:
+    useOverride: 0
+    isFolded: 1
+    variableValue: {fileID: 11400000, guid: 1ea855c917e72e24faccfc8a7b6d59a4, type: 2}
+    overrideValue: 0

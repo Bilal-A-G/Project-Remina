@@ -12,11 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29c1719ba34937149868ff07f4f23373, type: 3}
   m_Name: AvoidedTheRemina
   m_EditorClassIdentifier: 
-  validRequests:
-  - requests:
-    - Away
-    - Don't
-    - Run
-    events:
-    - {fileID: 11400000, guid: 4adfc08edca095b46ba3bc345ed48b96, type: 2}
+  validRequests: []
   transitions: []
