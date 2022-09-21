@@ -16,4 +16,5 @@ MonoBehaviour:
     useOverride: 1
     isFolded: 1
     variableValue: {fileID: 0}
-    overrideValue: Your sensors detected the monster accelerating, towards Eath...
+    overrideValue: Just then, your sensors detected the monster accelerating, towards
+      Earth...

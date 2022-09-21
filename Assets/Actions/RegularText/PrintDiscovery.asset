@@ -17,9 +17,4 @@ MonoBehaviour:
     isFolded: 1
     variableValue: {fileID: 0}
     overrideValue: You have spent all day searching for that wormhole with no success,
-      and you're starting to get tired.
-  outputFieldKey:
-    useOverride: 0
-    isFolded: 1
-    variableValue: {fileID: 11400000, guid: 236b028a2d750814c8c62345490f0276, type: 2}
-    overrideValue: 
+      and you were starting to get tired.

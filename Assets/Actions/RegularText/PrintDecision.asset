@@ -16,10 +16,5 @@ MonoBehaviour:
     useOverride: 1
     isFolded: 1
     variableValue: {fileID: 0}
-    overrideValue: You grow so tired that you wonder to yourself, "Should I just
+    overrideValue: You grew so tired that you wondered to yourself, "Should I just
       go home?"
-  outputFieldKey:
-    useOverride: 0
-    isFolded: 1
-    variableValue: {fileID: 11400000, guid: 236b028a2d750814c8c62345490f0276, type: 2}
-    overrideValue: 

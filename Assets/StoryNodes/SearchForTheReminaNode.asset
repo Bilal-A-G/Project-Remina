@@ -15,16 +15,20 @@ MonoBehaviour:
   validRequests:
   - requests:
     - Run
+    - Ran
     events:
     - {fileID: 11400000, guid: 4adfc08edca095b46ba3bc345ed48b96, type: 2}
   - requests:
     - Look
+    - Looked
     events:
     - {fileID: 11400000, guid: fa1bf12a4996d8d42ad81f0392c905e1, type: 2}
   transitions:
   - requests:
     - Run
+    - Ran
     transitionTo: {fileID: 11400000, guid: eec0e86f63fb3ba4ba49f259648758ce, type: 2}
   - requests:
     - Look
+    - Looked
     transitionTo: {fileID: 11400000, guid: adf80cd77b352e94f891df8efa1deb06, type: 2}

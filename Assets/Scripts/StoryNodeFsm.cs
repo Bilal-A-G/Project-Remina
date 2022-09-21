@@ -25,9 +25,12 @@ public class StoryNodeFsm : MonoBehaviour
                     if(debugMode) Debug.Log("Invoked event " + "Event = " + t + 
                                             "; Request = " + request);
                     t.Invoke(callingObject);
+                    goto OutOfLoop;
                 }
             }
         }
+        
+        OutOfLoop:
         
         for (int i = 0; i < currentNode.transitions.Count; i++)
         {
